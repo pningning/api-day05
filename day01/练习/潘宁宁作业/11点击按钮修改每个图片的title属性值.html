@@ -24,15 +24,22 @@
 		var aImg = document.getElementsByTagName('img');
 		// 添加单击事件
 		// 当鼠标点击按钮时 title改变
-		
+		oInt.onclick = function() {
 			for(var i = 0; i < aImg.length; i++) {
-				oInt.onclick = function() {
-				aImg[i].onmuseover = function() {
-					aImg[i].title = "看什么看";
-				}			
+				aImg[i].title = "看什么看";
 			}
 		}
-		// 不对
+
+			
+		// 	for(var i = 0; i < aImg.length; i++) {
+		// 		oInt.onclick = function() {
+		// 		aImg[i].onmuseover = function() {
+		// 			aImg[i].title = "看什么看";
+		// 		}			
+		// 	}
+		// }
+		// // 不对
+		// }
 	</script>
 
 </html>
